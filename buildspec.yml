@@ -1,14 +1,18 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /var/www/html
-hooks:
-  AfterInstall:
-    - location: scripts/install_nginx.sh
-      timeout: 300
-      runas: root
- ApplicationStart:
-    - location: scripts/start_nginx.sh
-      timeout: 300
-      runas: root
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+  build:
+    commands:
+      - echo Build started on 'date'
+      - cp index.html /var/www/html
+  post_build:
+   commands:
+    - echo Configuring NGINX
+artifacts:
+  files:
+    - '**/*'
