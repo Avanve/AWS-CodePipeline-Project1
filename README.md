@@ -1,7 +1,6 @@
 # AWS-CodePipeline-Project1
 AWS CodePipeline with AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
 
-steps:
 
 AWS IAM steps:
 
@@ -15,17 +14,17 @@ AWS IAM steps:
 
 AWS CodeCommit steps:
 
-1 create AWS CodeCommit repository
+1. create AWS CodeCommit repository
 
-2 Create IAM user and give permission to access AWS CodeCommit
+2. Create IAM user and give permission to access AWS CodeCommit
 
-3 Clone repository using Clone HTTPS on local machine
+3. Clone repository using Clone HTTPS on local machine
 
-4 Use any code edior and give credential to access repository(I used VS Code)
+4. Use any code edior and give credential to access repository(I used VS Code)
 
-5 Add index.html 
+5. Add index.html 
 
-6 Add this file to repository using git commands
+6. Add this file to repository using git commands
 
     git add .
     
@@ -33,15 +32,15 @@ AWS CodeCommit steps:
     
     git push origin master
 
-7 refesh AWS Code Commit repository and see file added in repo.
+7. refesh AWS Code Commit repository and see file added in repo.
 
 Amazon S3 steps:
 
-1 create a S3 bucket to store Build Artifacts
+1. create a S3 bucket to store Build Artifacts
 
 AWS CodeBuild steps:
 
-1 create a build project
+1. create a build project
   
   give project name
   
