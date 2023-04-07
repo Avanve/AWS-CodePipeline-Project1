@@ -129,17 +129,17 @@ AWS CodeDeploy steps:
    
   7. create deplyment group
     
-    sudo sevice codeceply-agent restatrt
+      sudo sevice codeceply-agent restatrt
     
-    sudo service codedeploy-agent satatus
+      sudo service codedeploy-agent satatus
   
-     If status is up and running restart deployment
+      If status is up and running restart deployment
 
   8. create appspec.yml file 
   
   9. push code to repository
   
-  10.Build project
+  10. Build project
   
   11. Retry deplyment
   
