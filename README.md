@@ -12,6 +12,7 @@ AWS IAM steps:
 
 4. create role for EC2 to give permissions to access S3, CodeDeploy, EC2Full accesss   
 
+
 AWS CodeCommit steps:
 
 1. create AWS CodeCommit repository
@@ -26,45 +27,48 @@ AWS CodeCommit steps:
 
 6. Add this file to repository using git commands
 
-    git add .
-    
-    git commit -m "file added"
-    
-    git push origin master
+        git add .
+
+        git commit -m "file added"
+
+        git push origin master
 
 7. refesh AWS Code Commit repository and see file added in repo.
+
 
 Amazon S3 steps:
 
 1. create a S3 bucket to store Build Artifacts
 
+
 AWS CodeBuild steps:
 
 1. create a build project
   
-  give project name
-  
-  source provider-AWS CodeCommit
-  
-  select repository name
-  
-  select branch-master
-  
-  environment type-managed image-Ubantu
-  
-  runtime-standard
-  
-  image-latest
-  
-  create new service role
-  
-  Buildspec file-add buildspecfile 
-  
-  store artifats in Amazon S3
-  
-  Start build
-  
+     - give project name
+
+     - source provider-AWS CodeCommit
+
+     - select repository name
+
+     - select branch-master
+
+     - environment type-managed image-Ubantu
+
+     - runtime-standard
+
+     - image-latest
+
+     - create new service role
+
+     - Buildspec file-add buildspecfile 
+
+     - store artifats in Amazon S3
+
+     - Start build
+
 2. After successful build artifacts stored in Amazon S3
+
 
 AWS CodeDeploy steps:
 
@@ -89,9 +93,9 @@ AWS CodeDeploy steps:
   
   5. Set up CodeDeploy agent on EC2
   
-    Connect EC2 instance.
+     Connect EC2 instance.
     
-    vim install.sh
+     vim install.sh
     
         #!/bin/bash 
         
