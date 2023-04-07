@@ -4,36 +4,36 @@ AWS CodePipeline with AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
 
 AWS IAM steps:
 
-1. create IAM user
+        1. create IAM user
 
-2. give permission to IAM user to acess AWS CodeCommit, AWS CodeBuild, AWS Code Deploy
+        2. give permission to IAM user to acess AWS CodeCommit, AWS CodeBuild, AWS Code Deploy
 
-3. create service role for CodeDeploy and give necessary permission to role 
+        3. create service role for CodeDeploy and give necessary permission to role 
 
-4. create role for EC2 to give permissions to access S3, CodeDeploy, EC2Full accesss   
+        4. create role for EC2 to give permissions to access S3, CodeDeploy, EC2Full accesss   
 
 
 AWS CodeCommit steps:
 
-1. create AWS CodeCommit repository
+        1. create AWS CodeCommit repository
 
-2. Create IAM user and give permission to access AWS CodeCommit
+        2. Create IAM user and give permission to access AWS CodeCommit
 
-3. Clone repository using Clone HTTPS on local machine
+        3. Clone repository using Clone HTTPS on local machine
 
-4. Use any code edior and give credential to access repository(I used VS Code)
+        4. Use any code edior and give credential to access repository(I used VS Code)
 
-5. Add index.html 
+        5. Add index.html 
 
-6. Add this file to repository using git commands
+        6. Add this file to repository using git commands
 
-        git add .
+                git add .
 
-        git commit -m "file added"
+                git commit -m "file added"
 
-        git push origin master
+                git push origin master
 
-7. refesh AWS Code Commit repository and see file added in repo.
+        7. refesh AWS Code Commit repository and see file added in repo.
 
 
 Amazon S3 steps:
