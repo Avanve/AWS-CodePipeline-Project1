@@ -15,25 +15,25 @@ AWS IAM steps:
 
 AWS CodeCommit steps:
 
-        1. create AWS CodeCommit repository
+  1. create AWS CodeCommit repository
 
-        2. Create IAM user and give permission to access AWS CodeCommit
+  2. Create IAM user and give permission to access AWS CodeCommit
 
-        3. Clone repository using Clone HTTPS on local machine
+  3. Clone repository using Clone HTTPS on local machine
 
-        4. Use any code edior and give credential to access repository(I used VS Code)
+  4. Use any code edior and give credential to access repository(I used VS Code)
 
-        5. Add index.html 
+  5. Add index.html 
 
-        6. Add this file to repository using git commands
+  6. Add this file to repository using git commands
 
-                git add .
+            git add .
 
-                git commit -m "file added"
+            git commit -m "file added"
 
-                git push origin master
+            git push origin master
 
-        7. refesh AWS Code Commit repository and see file added in repo.
+   7. refesh AWS Code Commit repository and see file added in repo.
 
 
 Amazon S3 steps:
@@ -75,11 +75,11 @@ AWS CodeDeploy steps:
 
 1 Create application
 
-   1. Create Application
+   - Create Application
    
-   2. give compute name as EC2
+   - give compute name as EC2
    
-   3. Click create application
+   - Click create application
 
 2 Create Deployment group
 
@@ -148,11 +148,11 @@ create pipepline steps:
 
 Pipeline Structure
 
-When this application is deployed, it will create an AWS CodePipeline pipeline that has up to the following 3 stages:
+  When this application is deployed, it will create an AWS CodePipeline pipeline that has up to the following 3 stages:
 
-Source: This stage is the entry point of the pipeline. It is triggered when you push a change to the specified CodeCommit repository branch.
+  Source: This stage is the entry point of the pipeline. It is triggered when you push a change to the specified CodeCommit repository branch.
 
-Build: This stage builds the project using AWS CodeBuild.
+  Build: This stage builds the project using AWS CodeBuild.
 
-Deploy (optional): This stage deploys the project using CloudFormation. This stage will only be created if you provide the DeployRoleName parameter when setting up this application. See the "Parameters" section below.
+  Deploy (optional): This stage deploys the project using CloudFormation. This stage will only be created if you provide the DeployRoleName parameter when setting up                        this application. See the "Parameters" section below.
 
