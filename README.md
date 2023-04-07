@@ -99,7 +99,7 @@ AWS CodeDeploy steps:
     
         #!/bin/bash 
         
-        # This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
+         This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
         
         sudo apt-get update 
         
