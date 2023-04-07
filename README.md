@@ -75,11 +75,11 @@ AWS CodeDeploy steps:
 
 1 Create application
 
-   - Create Application
+  1. Create Application
    
-   - give compute name as EC2
+  2. give compute name as EC2
    
-   - Click create application
+  3. Click create application
 
 2 Create Deployment group
 
