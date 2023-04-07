@@ -4,13 +4,13 @@ AWS CodePipeline with AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy
 
 AWS IAM steps:
 
-        1. create IAM user
+  1. create IAM user
+ 
+  2. give permission to IAM user to acess AWS CodeCommit, AWS CodeBuild, AWS Code Deploy
 
-        2. give permission to IAM user to acess AWS CodeCommit, AWS CodeBuild, AWS Code Deploy
+  3. create service role for CodeDeploy and give necessary permission to role 
 
-        3. create service role for CodeDeploy and give necessary permission to role 
-
-        4. create role for EC2 to give permissions to access S3, CodeDeploy, EC2Full accesss   
+  4. create role for EC2 to give permissions to access S3, CodeDeploy, EC2Full accesss   
 
 
 AWS CodeCommit steps:
